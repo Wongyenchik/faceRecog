@@ -119,7 +119,8 @@ if st.session_state["photo"] == "done":
 
     # Predict the label for the uploaded image
     predicted_class = preprocessing(uploaded_photo)
-    st.write("Predicted Celebrity: **" + predicted_class + "**")
+    st.write("Predicted Celebrity: **" + "**")
+    st.write(predicted_class)
 
 
 
