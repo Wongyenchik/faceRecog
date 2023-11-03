@@ -63,7 +63,7 @@ def vgg_face():
     model.add(Convolution2D(2622, (1, 1)))
     model.add(Flatten())
     model.add(Activation('softmax'))
-    model.load_weights('/Users/wongyenchik/Desktop/Image processing/vgg_face_weights.h5')
+    # model.load_weights('/Users/wongyenchik/Desktop/Image processing/vgg_face_weights.h5')
     vgg_face_descriptor = Model(inputs=model.layers[0].input, outputs=model.layers[-2].output)
     return vgg_face_descriptor
 
