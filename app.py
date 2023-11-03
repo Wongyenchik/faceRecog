@@ -86,7 +86,7 @@ def preprocessing(uploaded_photo):
     # Predict the label
     predicted_label = clf.predict(new_embedding_pca)
 
-    predicted_class = le.inverse_transform(predicted_label)[0]
+    predicted_class = le.inverse_transform(predicted_label)[1]
 
     return predicted_class
 
